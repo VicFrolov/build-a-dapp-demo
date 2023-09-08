@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "plugins": ["simple-import-sort", "sort-keys-fix"],
+  "rules": {
+    "react/jsx-sort-props": "error",
+    "simple-import-sort/imports": "error",
+    "sort-keys-fix/sort-keys-fix": "error"
+  }
 }
