@@ -2,6 +2,7 @@
   "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
   "plugins": ["simple-import-sort", "sort-keys-fix"],
   "rules": {
+    "@next/next/no-img-element": "off",
     "react/jsx-sort-props": "error",
     "simple-import-sort/imports": "error",
     "sort-keys-fix/sort-keys-fix": "error"
