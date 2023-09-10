@@ -1,5 +1,7 @@
 import { useEnsAvatar, useEnsName } from 'wagmi';
 
+import { ETHEREUM_CHAIN_ID } from '@/app/utils/chains';
+
 type WalletDetailsENSProps = {
   address?: `0x${string}`;
 };
@@ -9,8 +11,10 @@ export const WalletDetailsENS = ({ address }: WalletDetailsENSProps) => {
     data: ensName,
     isLoading: useEnsNameIsLoading,
     isError: useEnsNameIsError,
-  } = useEnsName({ address });
+  } = useEnsName({ address, chainId: ETHEREUM_CHAIN_ID });
+
   const { data: ensPhoto } = useEnsAvatar({
+    chainId: ETHEREUM_CHAIN_ID,
     name: ensName,
   });
 

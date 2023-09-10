@@ -3,6 +3,7 @@
 import { useAccount } from 'wagmi';
 
 import { ConnectionButton } from '@/app/components/buttons/ConnectionButton/ConnectionButton';
+import { NetworkSelector } from '@/app/components/NetworkSelector/NetworkSelector';
 import { WalletDetails } from '@/app/components/WalletDetails/WalletDetails';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
             isConnected={isConnected}
             isConnecting={isConnecting}
           />
+          <NetworkSelector />
         </div>
         <div className="flex">
           <ConnectionButton />
