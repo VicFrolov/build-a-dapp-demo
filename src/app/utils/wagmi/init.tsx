@@ -1,7 +1,8 @@
 'use client';
 
 import { ReactNode } from 'react';
-import { configureChains, createConfig, mainnet, WagmiConfig } from 'wagmi';
+import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import { base, goerli, mainnet, polygon } from 'wagmi/chains';
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet';
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
 // import { infuraProvider } from 'wagmi/providers/infura'; // Uncomment if infura API key is added to .env
@@ -10,7 +11,7 @@ import { publicProvider } from 'wagmi/providers/public';
 // const infuraProviderKey = process.env.INFURA_PROVIDER_KEY; // Uncomment if infura API key is added to .env
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet],
+  [mainnet, goerli, polygon, base],
   [publicProvider()] // If using Infura, replace with: [infuraProvider({ apiKey: infuraProviderKey }), publicProvider()]
 );
 
