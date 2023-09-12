@@ -4,6 +4,7 @@ import { useAccount } from 'wagmi';
 
 import { ConnectionButton } from '@/app/components/buttons/ConnectionButton/ConnectionButton';
 import { NetworkSelector } from '@/app/components/NetworkSelector/NetworkSelector';
+import { SearchWalletDetails } from '@/app/components/SearchWalletDetails/SearchWalletDetails';
 import { SendTransaction } from '@/app/components/SendTransaction/SendTransaction';
 import { WalletDetails } from '@/app/components/WalletDetails/WalletDetails';
 
@@ -21,6 +22,7 @@ export default function Home() {
               isConnecting={isConnecting}
             />
             <NetworkSelector />
+            <SearchWalletDetails />
           </div>
           <div className="ml-16">
             <SendTransaction />
