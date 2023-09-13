@@ -1,9 +1,10 @@
 ## Build a Dapp 101
 
+[Demo the Dapp](https://build-a-dapp-demo.vercel.app/)
 Welcome to building a dapp 101. This tutorial is separated into 4 sections:
-1) Wallet Connection
-2) Read from the blockchain
-3) Write to the blockchain
+1) [Wallet Connection](#part-1)
+2) [Read from the blockchain](#part-2-1)
+3) [Write to the blockchain](#part-3)
 4) Best Practices
 
 <img width="1756" alt="Screenshot 2023-09-11 at 9 48 58 PM" src="https://github.com/VicFrolov/build-a-dapp-demo/assets/8305711/841fbeb5-85e4-4da8-b05b-4e74b28148f9">
@@ -31,8 +32,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Part 1: Wallet Connection ([Demo](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/), [Code](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/))
 <a id="part-1"></a>
+## Part 1: Wallet Connection ([Demo](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/), [Code](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/))
 
 ### Configure a Provider
 #### What is an Ethereum provider?
@@ -180,8 +181,8 @@ We can now replace all the generated nextjs content inside of `page.tsx` with th
 ```
  
 
-## Part 2 Read from Blockchain
 <a id="part-2-1"></a>
+## Part 2 Read from Blockchain
 ### Part 2.1: Read Connected Wallet
 
 
