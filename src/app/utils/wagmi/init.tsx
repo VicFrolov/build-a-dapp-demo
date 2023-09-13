@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { base, goerli, mainnet, polygon } from 'wagmi/chains';
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet';
@@ -37,9 +37,11 @@ type WagmiProviderProps = {
 };
 
 export const WagmiProvider = ({ children }: WagmiProviderProps) => {
-  if (typeof window !== 'undefined') {
-    return <WagmiConfig config={config}>{children}</WagmiConfig>;
-  }
+  const [mounted, setMounted] = useState(false);
 
-  return children;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  return <WagmiConfig config={config}>{mounted && children}</WagmiConfig>;
 };
