@@ -2,7 +2,7 @@
 
 [Demo the Dapp](https://build-a-dapp-demo.vercel.app/)
 
-Welcome to building a dapp 101. This tutorial is separated into 4 sections:
+Welcome to building a dapp 101. This tutorial is separated into 4 general sections, each section contains a code link showing the diff, as well a a deployed demo page to see the changes in action:
 1) [Wallet Connection](#part-1)
 2) [Read from the blockchain](#part-2-1)
 3) [Write to the blockchain](#part-3)
@@ -34,7 +34,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 <a id="part-1"></a>
-## Part 1: Wallet Connection ([Demo](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/), [Code](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/))
+## Part 1: Wallet Connection ([Demo](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/), [Code](https://github.com/VicFrolov/build-a-dapp-demo/pull/2/files))
 
 ### Configure a Provider
 #### What is an Ethereum provider?
