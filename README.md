@@ -30,7 +30,6 @@ You should have:
     * Tallyho Wallet Extension
   * Familiarity with Typescript, HTML, and CSS
   * [Recommended] A wallet funded with Eth/Base or test funds
-    * To get test funds, please follow these instructions
   * [Optional] Free Infura account and API Key
 
     
@@ -52,6 +51,8 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+If you are using light mode, please go to `./globals.css`, and replace lines 5-9 with 12-16.
 
 <a id="part-1"></a>
 ## Part 1: Wallet Connection ([Demo](https://build-a-dapp-demo-7m8c85g4z-vicfrolov.vercel.app/), [Code](https://github.com/VicFrolov/build-a-dapp-demo/pull/2/files))
@@ -461,7 +462,7 @@ export const NetworkSelector = () => {
 
 * NOTE: Please see code diff which specifies ETHEREUM_CHAIN_ID to be used as the `chainId` param inside of `useEnsName`
 
-Warning: Your mileage may vary depending on the wallet you are using. While we have enabled support for these 4 networks in our dapp leveraging wagmi, there is no guarantee that the wallet a user is using will support them! Try it out yourself. If you scan & sign with the retail Coinbase app, you'll notice that Ethereum and Polygon work fine, however testnet and Base will surface an error.
+Warning: Your mileage may vary depending on the wallet you are using. While we have enabled support for these 4 networks in our dapp leveraging wagmi, there is no guarantee that the wallet a user is using will support them! Try it out yourself. If you scan & sign with the retail Coinbase app, you'll notice that Ethereum and Polygon work fine, however testnet will surface an error.
 
 Do not fear, as most wallets support the ability to add custom chains. They simply need some details: chainId, name, network, native currency, RPC urls, block chain explorer URLS and contracts. Click into the chains we've imported in the `wagmi/init.tsx` file to see their details. You can also take a look at the website [chainlist](https://chainlist.org/) which provides the necessary details for EVM compatible chains.
 
