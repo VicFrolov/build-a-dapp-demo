@@ -90,7 +90,7 @@ We will leverage wagmi, a higher level React library for interacting with provid
 
 #### Configuring our Provider
 ```bash
-npm install @wagmi/core viem
+npm install wagmi@1.3.10 viem
 ```
 
 Wagmi setup requires configuring which chains (e.g. Polygon) to use, specifying which connectors (e.g. Metamask) we want to use, and creating a wagmi config.
